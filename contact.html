@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/contact.js"></script>
+    <title>Contact Me</title>
+</head>
+<body>
+<div class="nav">
+    <div class="content">
+        <a href="website.html" class="logo">
+            <img class="mark" src="img/logo.png" alt="Portfolio" />
+            <img class="inline" src="img/logo_mini.png" alt="Portfolio"/>
+        </a>
+        <div class="nav-buttons">
+            <a href="https://twitter.com" class="nav-button nav-twitter" target="_blank">
+                <span class="fill">&nbsp;</span>
+                <img src="img/twitter.png" alt="Twitter" />
+                <span class="label">Twitter</span>
+            </a><a href="https://www.instagram.com" class="nav-button nav-insta" target="_blank">
+            <span class="fill">&nbsp;</span>
+            <img src="img/instagram.png" alt="Instagram" />
+            <span class="label">Instagram</span>
+        </a><a href="https://gmail.com" class="nav-button nav-email" target="_blank">
+            <span class="fill">&nbsp;</span>
+            <img src="img/email.png" alt="Email" />
+            <span class="label">Email</span>
+        </a>
+        </div>
+    </div>
+</div>
+<div class="input" style="background-color: #344599;">
+    <form class="main_input" style="background-color: #ecc547" action="https://httpbin.org/post " method="post">
+        <h1>Contact Me</h1>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" required><br>
+        <label for="city">City:</label><br>
+        <input list="cites" name="city" id="city">
+
+        <datalist id="cites">
+            <option value="Toronto">
+            <option value="Montreal">
+            <option value="Calgary">
+            <option value="Ottawa">
+            <option value="Edmonton">
+            <option value="Mississauga">
+            <option value="Winnipeg">
+            <option value="Vancouver">
+            <option value="Brampton">
+            <option value="Québec">
+            <option value="others">
+        </datalist>
+        <br>
+        <label for="postal">Postal Code:</label><br>
+        <input type="number" id="postal" name="postal" min="1000" max="9999" required> <br>
+        <input type="radio" id="comment" name="radio" onclick="radioCheck()" required>
+        <label for="comment">Comment:</label><br>
+        <input type="radio" id="question" name="radio" onclick="radioCheck()">
+        <label for="question">Question:</label><br>
+        <input type="radio" id="hiring" name="radio" onclick="radioCheck()">
+        <label for="hiring">Hiring:</label><br>
+        <label hidden id="rate_label" for="rate">Hourly Rate: USD</label><br>
+        <input hidden type="number" id="rate" name="rate"> <br>
+        <label for="text">Leave Your Query:</label><br>
+        <textarea id="text" name="text" rows="5" cols="50" required>
+        </textarea><br>
+        <label for="advise">Leave An Advise: (Optional)</label><br>
+        <textarea id="advise" name="advise" rows="2" cols="50">
+        </textarea>
+
+        <button id="button">Submit</button>
+    </form>
+</div>
+</body>
+</html>

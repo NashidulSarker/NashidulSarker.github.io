@@ -1,0 +1,204 @@
+html, body
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #344599;
+    color: black;
+}
+
+.nav {
+    width: 100%;
+    height: 12vw;
+    max-height: 70px;
+    background: #344599;
+    float: left;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.nav .content {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.nav .logo {
+    position: relative;
+    float: left;
+    top: 10%;
+    height: 80%;
+}
+
+.nav .logo img { height: 100%; }
+.nav .logo .mark { display: none; }
+.nav .logo .inline { display: block; }
+.nav .logo .inline-small { display: none; margin-right: 16px; }
+
+.nav .nav-buttons {
+    height: 100%;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.nav .nav-button {
+    position: relative;
+    height: 100%;
+    padding: 2.5% 3% 2.5% 3%;
+    box-sizing: border-box;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.nav .nav-button .fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 0;
+    transition: height 0.15s;
+}
+.nav .nav-button:hover .fill {
+    height: 100%;
+}
+
+.nav .nav-button img {
+    position: relative;
+    height: 100%;
+    margin-right: 5%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav .nav-button .label {
+    position: relative;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    transition: color 0.15s, font-size 0.25s;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .nav-button.nav-twitter .label { color: #3dd4dd; }
+.nav .nav-button.nav-twitter .fill { background: #3dd4dd; }
+.nav .nav-button.nav-insta .label { color: #ea92d1; }
+.nav .nav-button.nav-insta .fill { background: #ea92d1; }
+.nav .nav-button.nav-email .label { color: #3bdf75; }
+.nav .nav-button.nav-email .fill { background: #3bdf75; }
+
+.nav .nav-button:hover .label { color: #344599; }
+
+.nav .links {
+    float: right;
+    height: 100%;
+}
+
+.nav .links a {
+    position: relative;
+    top: 35%;
+    height: 30%;
+    margin-left: 8px;
+    float: left;
+}
+
+.nav .links a img {
+    height: 100%;
+}
+
+@media(max-width: 800px)
+{
+    .nav .nav-button img { margin: 0 5% 0 5%; padding: 0; }
+    .nav .nav-button .label { display: none; }
+}
+
+@media(min-width: 960px)
+{
+    .normal .nav {
+        position: fixed;
+        width: calc(50% - 220px);
+        height: 100%;
+        max-height: 100%;
+    }
+
+    .normal .nav .content {
+        position: relative;
+        width: 260px;
+        padding: 20px;
+        height: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        float: right;
+    }
+
+    .normal .nav .logo {
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+    .normal .nav .logo img { width: 100%; height: auto; }
+
+    .normal .nav .logo .mark { display: block; }
+    .normal .nav .logo .inline { display: none; }
+
+    .normal .nav .nav-buttons {
+        width: 100%;
+        height: 55px;
+        white-space: normal;
+        float: left;
+    }
+
+    .normal .nav .nav-buttons .nav-button {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .normal .nav .links {
+        position: absolute;
+        bottom: 10px;
+        right: 40px;
+        height: 110px;
+    }
+
+    .normal .nav .links a {
+        margin-left: 20px;
+    }
+
+    .normal .page {
+        width: calc(50% + 220px);
+        display: block;
+        float: right;
+    }
+
+    .normal .page .content {
+        width: 700px;
+        padding: 40px;
+        box-sizing: border-box;
+        float: left;
+    }
+}
+
+.main_input {
+    position: relative;
+    top: 100px;
+    left: 220px;
+    padding: 25px;
+    margin-right: 700px;
+    margin-left: 200px;
+}
+
+.main_input h1 {
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+.main_input #salary {
+    display: none;
+}
